@@ -27,3 +27,8 @@ include:
     shield: toucan_right rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: settings_reset
+  # Debug build: left half with USB logging instead of Studio (both need the USB serial port)
+  - board: seeeduino_xiao_ble
+    shield: toucan_left rgbled_adapter nice_view_gem
+    snippet: zmk-usb-logging
+    artifact-name: toucan_left_usb_logging
