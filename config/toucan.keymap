@@ -19,12 +19,12 @@
     };
 
     // Test keymap has no layer keys, so BT_CLR (normally on NAV) is a combo:
-    // press the top-left "1" and top-right "2" keys together.
+    // press F and G (left half, home row, inner side) together.
     combos {
         compatible = "zmk,combos";
         combo_bt_clear {
             timeout-ms = <50>;
-            key-positions = <0 11>;
+            key-positions = <16 17>;
             bindings = <&bt BT_CLR>;
         };
     };
