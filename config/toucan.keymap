@@ -27,6 +27,13 @@
             key-positions = <16 17>;
             bindings = <&bt BT_CLR>;
         };
+        // E + R + T together reboots the left half into its UF2 bootloader,
+        // so it can be flashed without reaching the reset button.
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <3 4 5>;
+            bindings = <&bootloader>;
+        };
     };
 
     // TEST KEYMAP: every key on the base layer types a distinct visible character
